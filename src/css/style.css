@@ -1,7 +1,200 @@
-p{
-	color: blue;
+
+/* body */
+body {
+    margin: 0;
 }
+#index {
+    background-color: gainsboro;
+}
+#aboutMe{
+    background-image:url(img/background.gif);
+    background-position:right top;
+    background-repeat:no-repeat;
+    background-attachment:local;
+    background-color:bisque;
+    background-position-x: 100%
+}
+#myFamily{
+    background-image:url(img/family.gif);
+    background-position:right bottom;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size: contain;
+
+}
+#faq{
+    background-image:url(img/questionnaire.jpg);
+    background-clip:border-box;
+    background-position-x:100%;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+}
+#allert1{
+    background-image: url(img/PseudoAllert.jpg);
+    background-clip: border-box;
+    background-position-x: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#allert2{
+    background-image:url(img/Cosmos.jpg);
+    background-clip:border-box;
+    background-position-x:100%;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+}
+#gallery {
+    background: lightsteelblue ;
+}
+/*header*/
 h1{
-	color: red;
-	text-decoration: underline;
+   text-align: center;
+   color: gray;
+   font-size:1.3em;
+   font-family: cursive;
+   font-weight: 800;
+   text-transform: uppercase;
+}
+h3{
+    text-align: right;
+    color: transparent;
+    font-size:1.4em;
+    font-family:cursive;
+}
+h2 {
+    text-align: Left;
+    color: gray;
+    font-size:1.5em;
+    font-family: cursive;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+#header{
+    color: lightslategray;
+    font-size:3.5em;
+}
+/*text*/
+.content {
+    color: black;
+    border-left: 2px solid navy;
+    padding-left: 5px;
+    margin-left: 225px;
+    font-family: cursive;
+}
+.text {
+    color: darkslategray;
+    font-size: 1em;
+    font-family: cursive;
+    margin-left: 20px ;
+}
+.link{
+    color: darkslategray;
+    font-size: 1em;
+    font-family: cursive;
+    margin-top:100px;
+    margin-left: 20px;
+}
+#table1{
+    color:crimson;
+    font-size: 1em;
+    font-family: cursive;
+    float: left;
+    border: 07px ridge darkolivegreen ;
+}
+#table2{
+    color:crimson;
+    font-size: 1em;
+    font-family: cursive;
+    border: 07px ridge darkolivegreen ;
+    float: right;
+}
+.form{
+    color: dimgray;
+    font-size: 1em;
+    font-family: cursive;
+    float: left;
+}
+#video{
+    border: medium ;
+}
+#moving{
+    float: left;
+    margin-top: -542px;
+    margin-left:520px;
+}
+.footer {
+    background: darkslategrey;
+    padding: 5px;
+    color: aliceblue;
+    clear: both;
+    margin-top: 220px;
+}
+/*photo*/
+
+.gallery img{
+    border:3px solid grey;
+    margin-left:30px;
+    margin-top:10px;
+}
+
+a.photo:hover img{
+    border:3px solid crimson;
+ }
+
+/*menu*/
+
+.left_menu {
+    color: cornflowerblue;
+    font-size:1.1em;
+    float:left;
+    width: 200px;
+    margin: 10px 10px 20px 10px;
+    font-family: cursive;
+}
+.left_menu > ul > li > a:hover,
+.left_menu > ul > li > a.active {
+    color: #333333;
+}
+.left_menu .paragraph > ul {
+    height: 0;
+    overflow: hidden;
+    background: #d8d8d8;
+}
+.left_menu .paragraph > ul > li > a {
+    color:#514b92;
+    font-size: 12px;
+    display: block;
+    text-decoration: none;
+    padding: 0.7em 1em;
+    border-bottom: 1.2px dotted #bababa;
+    font-weight: bold;
+    font-family: cursive;
+}
+.left_menu .paragraph > ul > li > a:hover,
+.left_menu .paragraph > ul > li > a.active {
+    background: #c9c5d8;
+    color: #333333;
+    padding-left: 2.3em;
+}
+.left_menu .paragraph > ul > li > a:after{
+    float: left;
+    margin-right:10px;
+}
+.left_menu .paragraph > ul:after {
+    font-size: 1px;
+    display:inline-block;
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    background: #333;
+    line-height:1px;
+    padding: 0.5px 0.7px;
+    color: #c9c9c9;
+    text-indent: 0;
+    text-align: center;
+    font-weight: 500;
+
 }
