@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="src/css/style.css">
-    <!--script type="text/javascript" src="./scripts/jquery-1.12.3.min.js"></script>
-    <script type="text/javascript" src="src/js/accordeon1.js"-->
-       
+    <script type="text/javascript" src="src/js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".paragraph > a").click(function() {
+                var ul = $(this).next(),
+                        clone = ul.clone().css({"height":"auto"}).appendTo(".left_menu"),
+                        height = ul.css("height") === "0px" ? ul[0].scrollHeight + "px" : "0px";
+                clone.remove();
+                ul.animate({"height":height});
+                return false;
+            });
+            $('.left_menu > ul > li > a').click(function(){
+                $('.paragraph a').removeClass('active');
+                $(this).addClass('active');
+            }),
+                    $('.paragraph ul li a').click(function(){
+                        $('.paragraph ul li a').removeClass('active');
+                        $(this).addClass('active');
+                    });
+        });
     </script>
     <title>Ivanova Elena</title>
 </head>
@@ -16,34 +33,34 @@
     <img src="src/img/logo3.gif" width="180" height="200" border="2" alt="it's i" align="right" title="Ivanova Elena"/>
 </div>
 
-<div class="mini-menu col-lg-3">
+<div class="left_menu">
     <ul>
         <li>
-            <a href="index.html">Home</a>
+            <a href="index.html"><b>Home</b></a>
         </li>
-        <li class="sub">
-            <a href="AboutMe.html">Biography</a>
+        <li class="paragraph">
+            <a href="AboutMe.html" target="_blank"><b>Biography</b></a>
             <ul>
                 <li><a href="AboutMe.html">childhood</a></li>
                 <li><a href="AboutMe.html">learning</a></li>
                 <li><a href="AboutMe.html">working</a></li>
             </ul>
-        <li class="sub">
-            <a href="Myfamily.html">My family</a>
+        <li class="paragraph">
+            <a href="Myfamily.html" target="_blank"><b>My family</b></a>
             <ul>
                 <li><a href="Myfamily.html">it's i</a></li>
                 <li><a href="Myfamily.html">my son</a></li>
                 <li><a href="Myfamily.html">my parents</a></li>
             </ul>
-        <li class="sub">
-            <a href="Gallery.html">Gallery</a>
+        <li class="paragraph">
+            <a href="Gallery.html" target="_blank"><b>Gallery</b></a>
             <ul>
-                <li><a href="Gallery.html">photo</a></li>
-                <li><a href="Gallery.html">photo</a></li>
-                <li><a href="Gallery.html">photo</a></li>
+                <li><a href="Gallery_js.html">photo</a></li>
+                <li><a href="Gallery_js">photo</a></li>
+                <li><a href="Gallery_js">photo</a></li>
             </ul>
-        <li class="sub">
-            <a href="FAQ.html">FAQ</a>
+        <li class="paragraph">
+            <a href="FAQ.html" target="_blank"><b>FAQ</b></a>
             <ul>
                 <li><a href="FAQ.html">form</a></li>
                 <li><a href="FAQ.html">test</a></li>
@@ -73,4 +90,4 @@
 </html>
 
 <!-- нужно фотки сделать всплыающими, формы с минимальной проверкой и меню - аккордеон!!
-http://devionity.com/ru/courses/js-fundamentals-and-jquery/js-user-interaction-functions-debugging - взаимодействие с пользователем-->
+http://devionity.com/ru/courses/js-fundamentals-and-jquery/js-user-interaction-functions-debugging - взаимодействие с пользователем
