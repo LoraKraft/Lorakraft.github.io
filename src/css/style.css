@@ -7,7 +7,7 @@ body {
     background-color: gainsboro;
 }
 #aboutMe{
-    background-image:url(img/background.gif);
+    background-image:url(../img/background.gif);
     background-position:right top;
     background-repeat:no-repeat;
     background-attachment:local;
@@ -15,7 +15,7 @@ body {
     background-position-x: 100%
 }
 #myFamily{
-    background-image:url(img/family.gif);
+    background-image:url(../img/family.gif);
     background-position:right bottom;
     background-repeat:no-repeat;
     background-attachment:fixed;
@@ -23,7 +23,7 @@ body {
 
 }
 #faq{
-    background-image:url(img/questionnaire.jpg);
+    background-image:url(../img/questionnaire.jpg);
     background-clip:border-box;
     background-position-x:100%;
     background-repeat:no-repeat;
@@ -31,14 +31,14 @@ body {
     background-size: cover;
 }
 #allert1{
-    background-image: url(img/PseudoAllert.jpg);
+    background-image: url(../img/PseudoAllert.jpg);
     background-clip: border-box;
     background-position-x: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 #allert2{
-    background-image:url(img/Cosmos.jpg);
+    background-image:url(../img/Cosmos.jpg);
     background-clip:border-box;
     background-position-x:100%;
     background-repeat:no-repeat;
