@@ -1,6 +1,7 @@
 .p{
-	color: #f5ff5f;
+	color: blue;
 }
 .h1{
-	size: 12px;
+	color: red;
+	text-decoration: underline;
 }
